@@ -1,3 +1,5 @@
+// 在标准输出上打印 Hello, World。
+
 #include <iostream>
 using namespace std;
 
