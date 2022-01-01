@@ -1,9 +1,7 @@
-// 用 Sales_item.h 编写程序，读取多条销售记录，并统计每个 ISBN（每本书）的有几条销售记录。
-
 #include "Sales_item.h"
 #include <iostream>
 
-int main(int argc, char const *argv[])
+int main()
 {
     Sales_item sum, book;
     if (std::cin >> sum)

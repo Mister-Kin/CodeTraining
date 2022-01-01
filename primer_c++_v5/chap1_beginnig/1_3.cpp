@@ -1,10 +1,7 @@
-// 在标准输出上打印 Hello, World。
-
 #include <iostream>
-using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
-    cout << "Hello, World";
+    std::cout << "Hello, World" << std::endl;
     return 0;
 }

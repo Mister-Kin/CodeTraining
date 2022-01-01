@@ -1,13 +1,11 @@
-// 使用乘法运算符 * 来打印两个数的积。
-
 #include <iostream>
-using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
-    cout << "Enter two number: " << endl;
-    int n1, n2;
-    cin >> n1 >> n2;
-    cout << "The product of " << n1 << " and " << n2 << " is " << n1 * n2 << endl;
+    std::cout << "Enter two numbers:" << std::endl;
+    int v1 = 0, v2 = 0;
+    std::cin >> v1 >> v2;
+    std::cout << "The product of " << v1 << " and " << v2
+              << " is " << v1 * v2 << std::endl;
     return 0;
 }

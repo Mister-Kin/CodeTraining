@@ -1,9 +1,7 @@
-// 用 Sales_item.h 编写程序，读取多条销售记录，并统计每本书的销售报告。
-
 #include "Sales_item.h"
 #include <iostream>
 
-int main(int argc, char const *argv[])
+int main()
 {
     Sales_item total;
     if (std::cin >> total)

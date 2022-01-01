@@ -1,8 +1,6 @@
-// 使用 while 循环，50 到 100 的整数相加。
-
 #include <iostream>
 
-int main(int argc, char const *argv[])
+int main()
 {
     int i = 50, sum = 0;
     while (i <= 100)
@@ -10,7 +8,7 @@ int main(int argc, char const *argv[])
         sum += i;
         i++;
     }
-    std::cout << "Sum of 50 to 100 inclusive is"
+    std::cout << "Sum of 50 to 100 is"
               << sum << std::endl;
     return 0;
 }
