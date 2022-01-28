@@ -554,6 +554,16 @@ e=42; // e 是一个 const int *，所以语句非法
 g=42; // g 是一个 const int 的引用，引用都是底层const，所以不能被赋值
 ```
 
+**类型别名（typedef和using）**
+```cpp
+typedef double wages
+using wages=double
+// 注意指针和类型别名的应用
+typedef char *pstring;
+const pstring cstr = 0; // cstr是指向char的指针常量。注意不要理解成 cosnt char *cstr = 0，这是错误的，const在这里是修饰整个类型，应该是顶层const。
+const pstring *ps; // ps是一个指针（实际就是指针的指针），它的对象是指向char的指针常量。
+```
+
 **auto关键字（让编译器通过初始值推断类型）**
 - auto定义的变量必须有初值。
 - auto一般会忽略掉顶层const，同时底层const会保留下来（若希望推断出的auto类型一个顶层const，明确指出const auto）。
@@ -591,6 +601,7 @@ a、b、c都是int类型，d是int &类型，即引用，绑定到a。
 程序结束时的值：a、b、c、d都为4。
 
 **decltype关键字（让编译器分析表达式来得到类型，不计算表达式的值）**
+- 变量是否需要赋初值，看类型，如int可以不赋初值，引用必须要初值。
 - decltype使用的表达式是一个变量时，则返回该变量的类型（包括顶层const和引用）。
 - decltype使用的表达式不是一个变量时，则返回表达式结果的类型。
 
@@ -622,7 +633,9 @@ a的值为3，b的值为4，c的值为3，d的值为3。
 
 > 说明由decltype 指定类型和由auto指定类型有何区别。请举一个例子，decltype指定的类型与auto指定的类型一样；再举一个例子，decltype指定的类型与auto指定的类型不一样。
 
-decltype处理顶层const方式与auto不同，decltype会将顶层const保留起来，auto会忽略掉顶层const。
+- decltype依据类型决定是否需要赋初值，auto必须要有初值。
+- decltype处理顶层const方式与auto不同，decltype会将顶层const保留起来，auto会忽略掉顶层const。
+
 ```cpp
 int i = 0, &r = i;
 // 相同 都是int

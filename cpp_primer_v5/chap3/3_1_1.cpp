@@ -1,5 +1,8 @@
 #include <iostream>
 
+using std::cout;
+using std::endl;
+
 int main()
 {
     int i = 50, sum = 0;
@@ -8,7 +11,7 @@ int main()
         sum += i;
         i++;
     }
-    std::cout << "Sum of 50 to 100 is "
-              << sum << std::endl;
+    cout << "Sum of 50 to 100 is "
+         << sum << endl;
     return 0;
 }
