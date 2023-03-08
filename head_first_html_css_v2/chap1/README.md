@@ -1,7 +1,6 @@
 # 第一章：Web语言：认识HTML
 
-章节总结（详见书籍P36）：
-
+## 章节总结（详见书籍P36）
 - HTML和CSS是用来创建网页的语言。
 - Web服务器存储并提供由HTML和CSS创建的网页。浏览器获取页面，并根据HTML和CSS显示网页的内容。
 - HTML是超文本标记语言（HyperText Markup Language）的缩写，用来建立网页的结构。
