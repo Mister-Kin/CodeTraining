@@ -404,7 +404,6 @@ double dval;
 * (c) ui 转换为 float，结果转换为 double
 * (d) ival 转换为 float，与fval相加后的结果转换为 double，最后的结果转换为char
 
-TODO：当前阅读进度
 隐式转换：
 - 算术转换
   - 在大多数表达式中，比int类型小的整型值首先提升为较大的整数类型。
