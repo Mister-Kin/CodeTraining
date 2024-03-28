@@ -19,7 +19,7 @@ void print(const int ia[], size_t size)
     }
 }
 
-// 这里的arr必须要有括号，这样才是声明为指向含有2个整数的数组的引用，没有括号就相当于2个引用的数组。
+// 这里的arr必须要有括号，这样才是声明为指向含有2个整数的数组的引用，没有括号就相当于引用的数组
 void print(int (&arr)[2])
 {
     for (auto i : arr)
