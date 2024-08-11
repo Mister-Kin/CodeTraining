@@ -8,3 +8,4 @@
   - [第三章「字符串、向量和数组」习题答案](chap3/README.md)
   - [第四章「表达式」习题答案](chap4/README.md)
   - [第五章「语句」习题答案](chap5/README.md)
+  - [第六章「函数」习题答案](chap6/README.md)
