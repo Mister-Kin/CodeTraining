@@ -2,7 +2,7 @@
 
 #define MAXN 10
 
-double f( int n, double a[], double x );
+double f(int n, double a[], double x);
 
 int main()
 {
@@ -10,18 +10,18 @@ int main()
     double a[MAXN], x;
 
     scanf("%d %lf", &n, &x);
-    for ( i=0; i<=n; i++ )
+    for (i = 0; i <= n; i++)
         scanf("%lf", &a[i]);
     printf("%.1f\n", f(n, a, x));
     return 0;
 }
 
 /* 你的代码将被嵌在这里 */
-double f( int n, double a[], double x )
+double f(int n, double a[], double x)
 {
-    double sum = 0,power = 1;
+    double sum = 0, power = 1;
     sum = a[0];
-    for (int y = 1; y <= n;y++)
+    for (int y = 1; y <= n; y++)
     {
         power *= x;
         sum = sum + a[y] * power;
@@ -29,7 +29,8 @@ double f( int n, double a[], double x )
     return sum;
 }
 
-/* 以下方法耗时过多，n=0时没必要也计算，直接令sum=a[0]
+/* 以下方法会运行超时（很大的N，卡时间）。
+实际n=0时没必要也计算，直接令sum=a[0]即可。
 double f( int n, double a[], double x )
 {
     double sum = 0;

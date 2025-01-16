@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-void PrintN ( int N );
+void PrintN(int N);
 
-int main ()
+int main()
 {
     int N;
 
     scanf("%d", &N);
-    PrintN( N );
+    PrintN(N);
 
     return 0;
 }
@@ -16,8 +16,8 @@ int main ()
 
 void PrintN(int N)
 {
-    for(int x=1;x<=N;x++)
+    for (int x = 1; x <= N; x++)
     {
-        printf("%d\n",x);
+        printf("%d\n", x);
     }
 }
